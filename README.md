@@ -6,17 +6,40 @@ __This tutorial mainly serves as a demonstration library of basic Python program
 
 _"pylint"_ is used to standardize the code style used in the tutorial.
 
+---
+
 ## Table of Contents
+
 /README.md
+
 /LICENSE
+
 /Notes
-  /REFERENCE.bib # List of references used in the tutorial.
+
+-./REFERENCE.bib # List of references used in the tutorial.
+
 /Topic1_PythonBasics
-  ./
-/Topic2_
+
+/Topic2_PythonIO
+
+/Topic3_PythonDataManagement
+
+/Topic4_PythonDataVisualization
+
+/Topic5_PythonforMathematics
+
+/Topic6_PythonforEngineering
+
+/Topic9_ProgrammingSkills
+
+---
 
 ## Reference
 
+---
+
 ## Contributors
+
+---
 
 ## Acknowledgement
