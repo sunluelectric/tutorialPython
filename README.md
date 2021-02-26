@@ -4,7 +4,9 @@ __This tutorial provides tutorial materials for Python as well as a selection of
 
 __This tutorial mainly serves as a demonstration library of basic Python programming and some selected functions of the aforementioned toolkit. Hopefully it would become a good cheat sheet reference for using the toolkit, but do notice that it by itself alone cannot be used as the complete alternative to university textbooks.__
 
-_"pylint"_ is used to standardize the code style used in the tutorial. The guidance to standard Python programming protocol is given in [here](https://www.python.org/dev/peps/) by _python.org_.
+---
+
+Note: The guidance to standard Python programming protocol is given [here](https://www.python.org/dev/peps/) by _python.org_. In this tutorial _"pylint"_ is used to standardize the code style of the sample programs. Instruction to the installation and application of _"pylint"_ can be found under directory _"/Topic0_PythonInstallation"_.
 
 ---
 
