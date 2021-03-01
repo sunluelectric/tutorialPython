@@ -1,40 +1,40 @@
 # tutorialPython
 
-__This tutorial provides tutorial materials for Python as well as a selection of useful and popular toolkit with Python in mathematics, engineering and IT.__
+__tutorialPython provides tutorial materials for the basic Python. A selection of useful and popular toolkit in mathematics, engineering and IT that can run on Python is also presented.__
 
-__This tutorial mainly serves as demonstrations of basic Python programming and some selected functions of the aforementioned toolkit. Hopefully it would become a good cheat sheet reference for using the toolkit, but do notice that it by itself alone cannot be used as the complete alternative to university textbooks.__
+__The aim of this tutorial is mainly to demonstrate some basic use cases of Python. Some showcases of using the aforementioned toolkit are also given. Hopefully, this tutorial would become a good cheat sheet reference for Python users. Do notice that the tutorial by itself alone cannot be used as the replacement to university textbooks or licensed training.__
 
 ---
 
-Note: The guidance to standard Python programming protocol is given [here](https://www.python.org/dev/peps/) by _python.org_. In this tutorial _"pylint"_ is used to standardize the code style of the sample programs. Instruction to the installation and application of _"pylint"_ can be found under directory _"/Topic0_PythonInstallation"_.
+Note: Standard Python programming protocol is given [here](https://www.python.org/dev/peps/) by _python.org_. In this tutorial, _"pylint"_ is used to check and standardize the code style of the sample programs. Instruction to the installation and application of _"pylint"_ can be found under directory _"/Topic0_PythonInstallation"_.
 
 ---
 
 ## Table of Contents
 
-/README.md
+./README.md
 
-/LICENSE
+./LICENSE
 
-/Notes
+./Notes
 
--./REFERENCE.bib # List of references used in the tutorial.
+.-/./REFERENCE.bib # List of references used in the tutorial.
 
-/Topic0_PythonInstallation
+./Topic0_PythonInstallation
 
-/Topic1_PythonBasics
+./Topic1_PythonBasics
 
-/Topic2_PythonIO
+./Topic2_PythonIO
 
-/Topic3_PythonDataManagement
+./Topic3_PythonDataManagement
 
-/Topic4_PythonDataVisualization
+./Topic4_PythonDataVisualization
 
-/Topic5_PythonforMathematics
+./Topic5_PythonforMathematics
 
-/Topic6_PythonforEngineering
+./Topic6_PythonforEngineering
 
-/Topic9_ProgrammingSkills
+./Topic9_ProgrammingSkills
 
 ---
 
