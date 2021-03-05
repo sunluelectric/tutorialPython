@@ -6,8 +6,8 @@ Created on Fri Mar  5 11:44:59 2021
 @author: sunlu
 """
 
-import LinearProgramming as lp
 import numpy as np
+import LinearProgramming as lp
 
 demo_lp = lp.LinearProgramming("c", np.array([-45,-80]))
 demo_lp.reset_inequality_constraint_a(np.array([[5,20],[10,15]]))

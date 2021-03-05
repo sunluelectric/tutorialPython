@@ -40,10 +40,14 @@ class LinearProgramming():
             self.upper_bound = None
         self.consistency_flag = False
         self.canonical_flag = False
-        
+        # Variables used in the class
         self.canonical_max_kpi = None
         self.canonical_inequality_constraint_a = None
         self.canonical_inequality_constraint_b = None
+        self.gurobi_lp_model = None
+        self.gurobi_lp_variable = None
+        self.optimum_x = None
+        self.optimum_y = None
     def reset_costfunction_matrix(self, costfunction_matrix):
         """
         reset_costfunction_matrix resets the cost function matrix of the LP problem.
