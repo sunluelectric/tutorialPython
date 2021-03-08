@@ -121,7 +121,7 @@ class LinearProgramming():
             if (self.inequality_constraint_a is not None)\
                 and (self.inequality_constraint_b is not None):
                 inequality_constraint_length = len(self.inequality_constraint_b)
-                if self.inequality_constraint_a.shape[0] == variable_length:
+                if self.inequality_constraint_a.shape[1] == variable_length:
                     pass
                 else:
                     print("The number of variables is not consistent\
