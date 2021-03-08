@@ -18,8 +18,14 @@ class LinearProgramming():
             problem_configuration = self._listtodict(list(args))
         except SyntaxError:
             print("Syntax error in the configuration of the LP problem.\n")
-        if "c" in problem_configuration.keys():
-            self.costfunction_matrix = problem_configuration.get("c")
+        if ("cmax" in problem_configuration.keys())\
+            and ("cmin" not in problem_configuration.keys()):
+            self.minimize_problem = False
+            self.costfunction_matrix = -problem_configuration.get("cmax")
+        elif ("cmin" in problem_configuration.keys())\
+            and ("cmax" not in problem_configuration.keys()):
+            self.minimize_problem = True
+            self.costfunction_matrix = problem_configuration.get("cmin")
         else:
             self.costfunction_matrix = None
         if "ineq_a" in problem_configuration.keys():
@@ -48,11 +54,25 @@ class LinearProgramming():
         self.gurobi_lp_variable = None
         self.optimum_x = None
         self.optimum_y = None
-    def reset_costfunction_matrix(self, costfunction_matrix):
+    def reset_costfunction_matrix(self, *args):
         """
         reset_costfunction_matrix resets the cost function matrix of the LP problem.
         """
-        self.costfunction_matrix = costfunction_matrix
+        try:
+            problem_configuration = self._listtodict(list(args))
+        except SyntaxError:
+            print("Syntax error in the configuration of the LP problem.\n")
+        if ("cmax" in problem_configuration.keys())\
+            and ("cmin" not in problem_configuration.keys()):
+            self.minimize_problem = False
+            self.costfunction_matrix = -problem_configuration.get("cmax")
+        elif ("cmin" in problem_configuration.keys())\
+            and ("cmax" not in problem_configuration.keys()):
+            self.minimize_problem = True
+            self.costfunction_matrix = problem_configuration.get("cmin")
+        else:
+            self.costfunction_matrix = None
+            self.minimize_problem = None
         self.consistency_flag = False
         self.canonical_flag = False
     def reset_inequality_constraint_a(self, inequality_constraint_a):
@@ -196,6 +216,10 @@ class LinearProgramming():
         print("The optimum x variables are: \n")
         print(self.optimum_x)
         print("\n")
-        print("The cost function value is: \n")
-        print(-self.optimum_y)
+        if self.minimize_problem:
+            print("The cost function value is: \n")
+            print(-self.optimum_y)
+        elif not self.minimize_problem:
+            print("The likelihood function value is: \n")
+            print(self.optimum_y)
         print("\n")
